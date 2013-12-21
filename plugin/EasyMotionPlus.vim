@@ -58,6 +58,10 @@
 		\ , 'W' : { 'name': 'WBW', 'dir': 0 }
 		\ , 'b' : { 'name': 'WB' , 'dir': 1 }
 		\ , 'B' : { 'name': 'WBW', 'dir': 1 }
+        \ , 'lw': { 'name': 'WB' , 'dir': 2 }
+        \ , 'lW': { 'name': 'WBW', 'dir': 2 }
+        \ , 'le': { 'name': 'E'  , 'dir': 2 }
+        \ , 'lE': { 'name': 'EW' , 'dir': 2 }
 		\ , 'e' : { 'name': 'E'  , 'dir': 0 }
 		\ , 'E' : { 'name': 'EW' , 'dir': 0 }
 		\ , 'ge': { 'name': 'E'  , 'dir': 1 }

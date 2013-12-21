@@ -470,12 +470,20 @@
 			" Find motion targets {{{
 				let search_direction = (a:direction == 1 ? 'b' : '')
 				let search_stopline = line(a:direction == 1 ? 'w0' : 'w$')
-
+                if a:direction == 2
+                    let search_stopline = line('.')
+                endif
+				
 				while 1
 					let pos = searchpos(a:regexp, search_direction, search_stopline)
 
 					" Reached end of search range
 					if pos == [0, 0]
+                        if search_direction != 'b' && a:direction == 2
+                            let search_direction = 'b'
+                            continue
+                        endif
+
 						break
 					endif
 
